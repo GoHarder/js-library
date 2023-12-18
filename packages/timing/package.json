@@ -1,0 +1,9 @@
+{
+  "name": "@harder-js/timing",
+  "version": "1.0.0",
+  "description": "A library to control the calling of functions.",
+  "main": "index.js",
+  "author": "Gregory Harder",
+  "license": "MIT",
+  "types": "./index.d.ts"
+}

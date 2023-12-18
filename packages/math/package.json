@@ -1,0 +1,10 @@
+{
+  "name": "@harder-js/math",
+  "version": "1.0.0",
+  "description": "A library of math related functions.",
+  "main": "index.js",
+  "author": "Gregory Harder",
+  "license": "MIT",
+  "types": "./index.d.ts",
+  "type": "module"
+}

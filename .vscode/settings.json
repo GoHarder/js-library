@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "cSpell.words": ["goharder", "memberof", "nums", "tsbuildinfo", "tsdoc"]
+}

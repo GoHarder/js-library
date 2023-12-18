@@ -1,0 +1,9 @@
+{
+  "name": "@harder-js/time-loop",
+  "version": "1.0.0",
+  "description": "A fixed time step animation loop.",
+  "main": "index.js",
+  "author": "Gregory Harder",
+  "license": "MIT",
+  "types": "./index.d.ts"
+}

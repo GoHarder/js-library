@@ -1,0 +1,9 @@
+{
+  "name": "@harder-js/array",
+  "version": "1.0.0",
+  "description": "A library of array related functions.",
+  "main": "index.js",
+  "author": "Gregory Harder",
+  "license": "MIT",
+  "types": "./index.d.ts"
+}
