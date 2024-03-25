@@ -22,3 +22,7 @@
 	path = packages/time-loop
 	url = https://github.com/GoHarder/js-library.git
 	branch = time-loop-main
+[submodule "packages/timing"]
+	path = packages/timing
+	url = https://github.com/GoHarder/js-library.git
+	branch = timing-main
