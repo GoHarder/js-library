@@ -1,0 +1,22 @@
+{
+  "name": "@vantage-js/time-loop",
+  "version": "1.0.0",
+  "description": "A package of a fixed time step loop.",
+  "author": "Gregory Harder",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@vantage-js/math": "https://github.com/GoHarder/js-library/tarball/math-v1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.3",
+    "vite-plugin-dts": "^3.7.3"
+  }
+}
