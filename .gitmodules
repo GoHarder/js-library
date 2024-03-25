@@ -1,0 +1,3 @@
+[submodule "packages/array"]
+	path = packages/array
+	url = ./packages/array/

@@ -1,0 +1,16 @@
+{
+  "name": "vantage-js-workspace",
+  "version": "1.0.0",
+  "description": "A monorepo of commonly used JavaScript functions.",
+  "author": "Gregory Harder",
+  "license": "MIT",
+  "type": "module",
+  "npmClient": "pnpm",
+  "scripts": {
+    "graph": "nx graph"
+  },
+  "devDependencies": {
+    "lerna": "^8.1.2",
+    "nx": "^18.1.2"
+  }
+}
