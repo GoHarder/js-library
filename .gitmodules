@@ -2,3 +2,7 @@
 	path = packages/array
 	url = https://github.com/GoHarder/js-library.git
 	branch = array-main
+[submodule "packages/validate"]
+	path = packages/validate
+	url = https://github.com/GoHarder/js-library.git
+	branch = validate-main
