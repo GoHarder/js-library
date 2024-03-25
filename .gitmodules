@@ -10,3 +10,7 @@
 	path = packages/object
 	url = https://github.com/GoHarder/js-library.git
 	branch = object-main
+[submodule "packages/math"]
+	path = packages/math
+	url = https://github.com/GoHarder/js-library.git
+	branch = math-main
