@@ -6,3 +6,7 @@
 	path = packages/validate
 	url = https://github.com/GoHarder/js-library.git
 	branch = validate-main
+[submodule "packages/object"]
+	path = packages/object
+	url = https://github.com/GoHarder/js-library.git
+	branch = object-main
