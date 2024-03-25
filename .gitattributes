@@ -1,0 +1,5 @@
+node_modules    export-ignore
+src             export-ignore
+.gitignore      export-ignore
+tsconfig.json   export-ignore
+vite.config.ts  export-ignore
