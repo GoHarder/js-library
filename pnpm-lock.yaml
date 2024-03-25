@@ -46,51 +46,10 @@ importers:
         version: 3.7.3(@types/node@20.11.30)(typescript@5.4.3)(vite@5.2.3)
 
   packages/object:
-    devDependencies:
-      '@types/node':
-        specifier: ^20.11.30
-        version: 20.11.30
-      typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
-      vite:
-        specifier: ^5.2.3
-        version: 5.2.3(@types/node@20.11.30)
-      vite-plugin-dts:
-        specifier: ^3.7.3
-        version: 3.7.3(@types/node@20.11.30)(typescript@5.4.3)(vite@5.2.3)
-
-  packages/string:
-    devDependencies:
-      '@types/node':
-        specifier: ^20.11.30
-        version: 20.11.30
-      typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
-      vite:
-        specifier: ^5.2.3
-        version: 5.2.3(@types/node@20.11.30)
-      vite-plugin-dts:
-        specifier: ^3.7.3
-        version: 3.7.3(@types/node@20.11.30)(typescript@5.4.3)(vite@5.2.3)
-
-  packages/time-loop:
-    devDependencies:
-      '@types/node':
-        specifier: ^20.11.30
-        version: 20.11.30
-      typescript:
-        specifier: ^5.4.3
-        version: 5.4.3
-      vite:
-        specifier: ^5.2.3
-        version: 5.2.3(@types/node@20.11.30)
-      vite-plugin-dts:
-        specifier: ^3.7.3
-        version: 3.7.3(@types/node@20.11.30)(typescript@5.4.3)(vite@5.2.3)
-
-  packages/timing:
+    dependencies:
+      '@vantage-js/validate':
+        specifier: https://github.com/GoHarder/js-library/tarball/validate-v1.0.0
+        version: '@github.com/GoHarder/js-library/tarball/validate-v1.0.0'
     devDependencies:
       '@types/node':
         specifier: ^20.11.30
@@ -5027,3 +4986,9 @@ packages:
     optionalDependencies:
       commander: 9.5.0
     dev: true
+
+  '@github.com/GoHarder/js-library/tarball/validate-v1.0.0':
+    resolution: {tarball: https://github.com/GoHarder/js-library/tarball/validate-v1.0.0}
+    name: '@vantage-js/validate'
+    version: 1.0.0
+    dev: false

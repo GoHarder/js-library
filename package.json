@@ -7,7 +7,8 @@
   "type": "module",
   "npmClient": "pnpm",
   "scripts": {
-    "graph": "nx graph"
+    "graph": "nx graph",
+    "version": "lerna version --no-push"
   },
   "devDependencies": {
     "lerna": "^8.1.2",
