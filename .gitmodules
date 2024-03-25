@@ -14,3 +14,7 @@
 	path = packages/math
 	url = https://github.com/GoHarder/js-library.git
 	branch = math-main
+[submodule "packages/string"]
+	path = packages/string
+	url = https://github.com/GoHarder/js-library.git
+	branch = string-main
