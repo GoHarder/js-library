@@ -1,6 +1,6 @@
 {
   "name": "@vantage-js/math",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package of commonly used JavaScript math functions.",
   "author": "Gregory Harder",
   "license": "MIT",
