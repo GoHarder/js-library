@@ -1,3 +1,4 @@
 [submodule "packages/array"]
 	path = packages/array
-	url = ./packages/array/
+	url = https://github.com/GoHarder/js-library.git
+	branch = array-main
