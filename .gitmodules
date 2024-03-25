@@ -18,3 +18,7 @@
 	path = packages/string
 	url = https://github.com/GoHarder/js-library.git
 	branch = string-main
+[submodule "packages/time-loop"]
+	path = packages/time-loop
+	url = https://github.com/GoHarder/js-library.git
+	branch = time-loop-main
