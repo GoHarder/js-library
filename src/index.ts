@@ -8,4 +8,4 @@
  * @param start - The start of the range.
  * @param end - The end of the range.
  */
-export const range = (start: number, end: number) => Array.from({ length: end - start }, (_, i) => start + i);
+export const range = (start: number, end: number) => Array.from({ length: end - start + 1}, (_, i) => start + i);
