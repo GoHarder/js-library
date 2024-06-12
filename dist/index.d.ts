@@ -26,7 +26,7 @@ export declare const isArray: (value: unknown) => value is any[];
  * Verifies if a value is an object.
  * @param value - The value to verify.
  */
-export declare const isObject: (value: unknown) => value is object;
+export declare const isObject: (value: unknown) => value is Record<string | number | symbol, any>;
 /**
  * Verifies if a value is a non empty string.
  * @param value - The value to verify.

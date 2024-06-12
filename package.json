@@ -1,6 +1,6 @@
 {
   "name": "@vantage-js/validate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package of commonly used JavaScript validation functions.",
   "author": "Gregory Harder",
   "license": "MIT",

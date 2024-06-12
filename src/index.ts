@@ -31,7 +31,7 @@ export const isArray = (value: unknown): value is any[] => typeof value === 'obj
  * Verifies if a value is an object.
  * @param value - The value to verify.
  */
-export const isObject = (value: unknown): value is object => typeof value === 'object' && !Array.isArray(value);
+export const isObject = (value: unknown): value is Record<string | number | symbol, any> => typeof value === 'object' && !Array.isArray(value);
 
 /**
  * Verifies if a value is a non empty string.
