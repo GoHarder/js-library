@@ -26,7 +26,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           title: Release ${{ github.ref_name }}
-          tag: ${{ github.ref }}
       - name: Upload release assets
         uses: AButler/upload-release-assets@v3.0
         with:
