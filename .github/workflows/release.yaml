@@ -19,6 +19,8 @@ jobs:
         run: pnpm install
       - name: Build packages
         run: pnpm run build
+      - name: Package
+        run: pnpm run pack
       - name: Create release
         id: create_release
         uses: elgohr/Github-Release-Action@v5
