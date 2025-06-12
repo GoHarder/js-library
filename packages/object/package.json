@@ -1,0 +1,25 @@
+{
+  "name": "@moss/object",
+  "version": "0.0.1",
+  "description": "A library of object related functions.",
+  "author": "Gregory Harder",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/module.js",
+  "types": "dist/module.d.ts",
+  "scripts": {
+    "build": "tsc && vite build",
+    "pack": "pnpm pack"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@moss/assertion": "^0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

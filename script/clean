@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+find . -path '**packages/*/dist' | xargs rm -rf
+find . -name 'moss-*.tgz' | xargs rm -rf
