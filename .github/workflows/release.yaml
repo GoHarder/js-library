@@ -38,3 +38,4 @@ jobs:
         with:
           files: '**/moss-*.tgz'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          release-id: ${{ github.run_id }}
