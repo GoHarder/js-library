@@ -1,6 +1,6 @@
 {
   "name": "@moss/js-library",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Gregory Harder",
   "license": "MIT",
   "description": "A monorepo of JavaScript libraries.",
@@ -11,6 +11,7 @@
     "version:gh": "lerna version --conventional-commits --create-release github --yes"
   },
   "devDependencies": {
-    "lerna": "^8.2.2"
+    "lerna": "^8.2.2",
+    "typedoc": "^0.28.5"
   }
 }

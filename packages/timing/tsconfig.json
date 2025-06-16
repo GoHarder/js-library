@@ -9,7 +9,7 @@
     // --------------------------------------------------------------------------------------
     /* Set the JavaScript language version for emitted JavaScript and include compatible
      * library declarations. */
-    "target": "ES2016",
+    "target": "es6",
 
     // MARK: Modules
     // --------------------------------------------------------------------------------------
