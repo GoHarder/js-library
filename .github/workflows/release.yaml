@@ -1,5 +1,8 @@
 name: Release
-on: [workflow_dispatch]
+on:
+  push:
+    tags:
+      - 'v*.*.*'
 jobs:
   release:
     name: Release packages
@@ -31,11 +34,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          title: Release ${{ github.run_id }}
+          title: Release ${{ github.ref_name }}
+          tag: ${{ github.ref }}
 
       - name: Upload release assets
         uses: AButler/upload-release-assets@v3.0
         with:
-          files: '**/moss-*.tgz'
+          files: '**/*.tgz'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          release-id: ${{ github.run_id }}
+          release-tag: ${{ github.ref_name }}
