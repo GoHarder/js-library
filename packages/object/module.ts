@@ -1,9 +1,14 @@
-// A library of object related functions.
+/**
+ * A library of object related functions.
+ * @module @moss/object
+ */
+
+// MARK: Imports
+// --------------------------------------------------------------------------------------
 import { isObject } from '@moss/assertion';
 
 // MARK: Library
 // --------------------------------------------------------------------------------------
-
 /**
  * Deeply merges one or more objects into a target object.
  * @param target The target object to merge into.

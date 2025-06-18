@@ -1,8 +1,10 @@
-// A library to control the calling of functions.
+/**
+ * A library to control the calling of functions.
+ * @module @moss/string
+ */
 
 // MARK: Library
 // --------------------------------------------------------------------------------------
-
 /**
  * Groups multiple calls to a function into a delayed call.
  * @param fn The function to debounce.

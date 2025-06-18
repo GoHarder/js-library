@@ -1,8 +1,10 @@
-// A library of string related functions.
+/**
+ * A library of string related functions.
+ * @module @moss/string
+ */
 
 // MARK: Library
 // --------------------------------------------------------------------------------------
-
 /**
  * Capitalizes the first letter of a string.
  * @param str The string to capitalize.
