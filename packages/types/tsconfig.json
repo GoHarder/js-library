@@ -1,0 +1,51 @@
+//  Visit https://aka.ms/tsconfig to read more about this file
+{
+  "compilerOptions": {
+    // MARK: Projects
+    // --------------------------------------------------------------------------------------
+    // No settings
+
+    // MARK: Language and Environment
+    // --------------------------------------------------------------------------------------
+    /* Set the JavaScript language version for emitted JavaScript and include compatible
+     * library declarations. */
+    "target": "es6",
+
+    // MARK: Modules
+    // --------------------------------------------------------------------------------------
+    /* Specify what module code is generated. */
+    "module": "ES2015",
+    /* Specify how TypeScript looks up a file from a given module specifier. */
+    "moduleResolution": "Bundler",
+
+    // MARK: JavaScript Support
+    // --------------------------------------------------------------------------------------
+    // No settings
+
+    // MARK: Emit
+    // --------------------------------------------------------------------------------------
+    /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    "declaration": true,
+    /* Specify an output folder for all emitted files. */
+    "outDir": "./dist",
+
+    // MARK: Interop Constraints
+    // --------------------------------------------------------------------------------------
+    /* Emit additional JavaScript to ease support for importing CommonJS modules.
+     * This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "esModuleInterop": true,
+    /* Ensure that casing is correct in imports. */
+    "forceConsistentCasingInFileNames": true,
+
+    // MARK: Type Checking
+    // --------------------------------------------------------------------------------------
+    /* Enable all strict type-checking options. */
+    "strict": true,
+
+    // MARK: Completeness
+    // --------------------------------------------------------------------------------------
+    /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true
+  },
+  "include": ["module.ts"]
+}
