@@ -1,10 +1,13 @@
-// A library of math related functions.
+/**
+ * A library of math related functions.
+ * @module @moss/math
+ */
 
 // MARK: Helpers
 // --------------------------------------------------------------------------------------
 
 // NOTE: 5-27-2025 2:17 PM
-// This is from the old library. Don't know if line 10 is needed.
+// This is from the old library. Don't know if line 14 is needed.
 // function libRound(num: number, increment: number, method: 'round' | 'floor' | 'ceil') {
 //   if (increment === 0) return Math[method](num);
 //   const decimal = `${increment}`.split('.')[1]?.length || 0;
@@ -93,6 +96,22 @@ export function cos(deg: number) {
  */
 export function tan(deg: number) {
   return Math.tan(radians(deg));
+}
+
+/**
+ * Averages an array of numbers.
+ * @param nums An array of numbers.
+ */
+export function average(nums: number[]) {
+  return nums.reduce((a, b) => a + b, 0) / nums.length;
+}
+
+/**
+ * Adds an array of numbers.
+ * @param nums An array of numbers.
+ */
+export function sum(nums: number[]) {
+  return nums.reduce((a, b) => a + b, 0);
 }
 
 /**
