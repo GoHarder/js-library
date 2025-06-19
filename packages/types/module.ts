@@ -3,6 +3,14 @@
  * @module @moss/types
  */
 
+// MARK: Helpers
+// --------------------------------------------------------------------------------------
+/**
+ * Helper type for defining a type that can only have the keys of the first type.
+ * Used in OneOf type.
+ */
+type OnlyFirst<F, S> = Clarify<F & { [Key in keyof Omit<S, keyof F>]?: never }>;
+
 // MARK: Library
 // --------------------------------------------------------------------------------------
 /** Transforms ambiguous or generic types into more specific, well-defined type. */
@@ -32,3 +40,6 @@ export type JsonArray = Json[];
 
 /** A type that represents any valid JSON type. */
 export type Json = JsonPrimitive | JsonObject | JsonArray;
+
+/** A type that is one of the types in the given array. */
+export type OneOf<TArr extends any[], T1 = never, Props = MergeArray<TArr>> = TArr extends [infer Head, ...infer Rem] ? OneOf<Rem, T1 | OnlyFirst<Head, Props>, Props> : T1;
