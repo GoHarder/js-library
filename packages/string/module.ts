@@ -26,13 +26,13 @@ export function dashToCamelCase(str: string) {
  * @param str The string to convert.
  */
 export function camelToDashCase(str: string) {
-  return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+  return str.replace(/([A-Z])/g, (_, c) => `-${c.toLowerCase()}`);
 }
 
 /**
  * Converts a string with spaces to a camel case string.
  * @param str The string to convert.
  */
-export function toCamelCase(str: string) {
+export function textToCamelCase(str: string) {
   return str.replace(/ ([a-z])/g, (_, c) => c.toUpperCase());
 }

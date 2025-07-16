@@ -3,17 +3,13 @@
  * @module @moss/math
  */
 
-// MARK: Helpers
+// MARK: Globals
 // --------------------------------------------------------------------------------------
 
-// NOTE: 5-27-2025 2:17 PM
-// This is from the old library. Don't know if line 14 is needed.
-// function libRound(num: number, increment: number, method: 'round' | 'floor' | 'ceil') {
-//   if (increment === 0) return Math[method](num);
-//   const decimal = `${increment}`.split('.')[1]?.length || 0;
-//   const str = parseFloat(`${num}`).toFixed(20);
-//   return Number(`${Math[method](Number(`${str}e${decimal}`))}e-${decimal}`);
-// }
+const trigRound = 0.000000000000001;
+
+// MARK: Helpers
+// --------------------------------------------------------------------------------------
 
 /**
  * Returns the number of decimals in a number.
@@ -32,8 +28,9 @@ function decimals(num: number) {
 function libRound(num: number, inc: number, method: 'round' | 'floor' | 'ceil') {
   if (inc === 0) return Math[method](num);
   const dec = decimals(inc);
-  const value = Math.round((num + Number.EPSILON) / inc) * inc;
-  return Number(`${Math[method](Number(`${value}e${dec}`))}e-${dec}`);
+  const value = Math[method]((num + Number.EPSILON) / inc) * inc;
+  const str = parseFloat(`${value}`).toFixed(20);
+  return Number(`${Math[method](Number(`${str}e${dec}`))}e-${dec}`);
 }
 
 // MARK: Library
@@ -79,7 +76,7 @@ export function radians(deg: number) {
  * @param deg The angle in degrees.
  */
 export function sin(deg: number) {
-  return Math.sin(radians(deg));
+  return round(Math.sin(radians(deg)), trigRound);
 }
 
 /**
@@ -87,7 +84,7 @@ export function sin(deg: number) {
  * @param deg The angle in degrees.
  */
 export function cos(deg: number) {
-  return Math.cos(radians(deg));
+  return round(Math.cos(radians(deg)), trigRound);
 }
 
 /**
@@ -95,7 +92,8 @@ export function cos(deg: number) {
  * @param deg The angle in degrees.
  */
 export function tan(deg: number) {
-  return Math.tan(radians(deg));
+  if (deg % 180 === 90) return deg % 360 === 90 ? Infinity : -Infinity;
+  return round(Math.tan(radians(deg)), trigRound);
 }
 
 /**

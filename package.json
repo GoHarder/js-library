@@ -1,6 +1,6 @@
 {
   "name": "@moss/js-library",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Gregory Harder",
   "license": "MIT",
   "description": "A monorepo of JavaScript libraries.",

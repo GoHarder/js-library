@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1.0.13",
+    "@moss/assertion": "./packages/assertion/module.ts",
+    "@moss/types": "./packages/types/module.ts"
+  },
+  "test": {
+    "include": ["test"]
+  }
+}
