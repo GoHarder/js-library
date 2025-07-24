@@ -3,11 +3,6 @@
  * @module @moss/math
  */
 
-// MARK: Globals
-// --------------------------------------------------------------------------------------
-
-const trigRound = 0.000000000000001;
-
 // MARK: Helpers
 // --------------------------------------------------------------------------------------
 
@@ -16,7 +11,13 @@ const trigRound = 0.000000000000001;
  * @param num The number to get the decimals of.
  */
 function decimals(num: number) {
-  return num.toString().split('.')[1]?.length || 0;
+  const str = num.toString();
+
+  if (str.includes('e-')) {
+    return Number(str.split('e-')[1]);
+  }
+
+  return str.split('.')[1]?.length || 0;
 }
 
 /**
@@ -29,8 +30,8 @@ function libRound(num: number, inc: number, method: 'round' | 'floor' | 'ceil') 
   if (inc === 0) return Math[method](num);
   const dec = decimals(inc);
   const value = Math[method]((num + Number.EPSILON) / inc) * inc;
-  const str = parseFloat(`${value}`).toFixed(20);
-  return Number(`${Math[method](Number(`${str}e${dec}`))}e-${dec}`);
+  const str = parseFloat(`${value}`).toFixed(dec);
+  return Number(str);
 }
 
 // MARK: Library
@@ -76,7 +77,7 @@ export function radians(deg: number) {
  * @param deg The angle in degrees.
  */
 export function sin(deg: number) {
-  return round(Math.sin(radians(deg)), trigRound);
+  return round(Math.sin(radians(deg)), 1e-15);
 }
 
 /**
@@ -84,7 +85,7 @@ export function sin(deg: number) {
  * @param deg The angle in degrees.
  */
 export function cos(deg: number) {
-  return round(Math.cos(radians(deg)), trigRound);
+  return round(Math.cos(radians(deg)), 1e-15);
 }
 
 /**
@@ -93,7 +94,7 @@ export function cos(deg: number) {
  */
 export function tan(deg: number) {
   if (deg % 180 === 90) return deg % 360 === 90 ? Infinity : -Infinity;
-  return round(Math.tan(radians(deg)), trigRound);
+  return round(Math.tan(radians(deg)), 1e-15);
 }
 
 /**

@@ -1,4 +1,17 @@
-import { round, floor, ceil, radians, sin, cos, tan, average, sum, gcd, fraction, lengthStr } from '../packages/math/module.ts';
+import {
+  round,
+  floor,
+  ceil,
+  radians,
+  sin,
+  cos,
+  tan,
+  average,
+  sum,
+  gcd,
+  fraction,
+  lengthStr,
+} from '../packages/math/module.ts';
 import { assertEquals } from '@std/assert';
 
 Deno.test('round', () => {
@@ -35,6 +48,7 @@ Deno.test('cos', () => {
   assertEquals(cos(90), 0);
   assertEquals(cos(180), -1);
   assertEquals(cos(270), 0);
+  assertEquals(cos(28 / 2), 0.970295726275997);
 });
 
 Deno.test('tan', () => {
