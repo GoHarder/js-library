@@ -15,7 +15,7 @@
     "dist"
   ],
   "dependencies": {
-    "@moss/assertion": "^0.0.1",
+    "@moss/assertion": "workspace:^",
     "@moss/types": "workspace:^"
   },
   "devDependencies": {

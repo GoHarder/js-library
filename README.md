@@ -1,6 +1,9 @@
-# JavaScript Library
+# JavaScript Library <!-- omit in toc -->
 
-## Lerna Commands
+## Table of contents <!-- omit in toc -->
+- [Lerna commands](#lerna-commands)
+
+## Lerna commands
 
 Create a new package:
 

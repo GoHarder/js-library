@@ -1,4 +1,4 @@
-import { capitalize, dashToCamelCase, camelToDashCase, textToCamelCase } from '../packages/string/module.ts';
+import { capitalize, dashToCamelCase, camelToDashCase, textToCamelCase, textToTitleCase } from '../packages/string/module.ts';
 import { assertEquals } from '@std/assert';
 
 Deno.test('capitalize', () => {
@@ -31,4 +31,12 @@ Deno.test('textToCamelCase', () => {
   assertEquals(textToCamelCase(''), '');
   assertEquals(textToCamelCase('a b c'), 'aBC');
   assertEquals(textToCamelCase('1 abc'), '1Abc'); // Non-alphabetic first character
+});
+
+Deno.test('textToTitleCase', () => {
+  assertEquals(textToTitleCase('hello world'), 'Hello World');
+  assertEquals(textToTitleCase('my name is'), 'My Name Is');
+  assertEquals(textToTitleCase(''), '');
+  assertEquals(textToTitleCase('a b c'), 'A B C');
+  assertEquals(textToTitleCase('1 abc'), '1 Abc'); // Non-alphabetic first character
 });

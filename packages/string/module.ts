@@ -36,3 +36,11 @@ export function camelToDashCase(str: string) {
 export function textToCamelCase(str: string) {
   return str.replace(/ ([a-z])/g, (_, c) => c.toUpperCase());
 }
+
+/**
+ * Converts a string with spaces to a title case string.
+ * @param str The string to convert.
+ */
+export function textToTitleCase(str: string) {
+  return str.replace(/\b\w/g, (char) => char.toUpperCase());
+}
